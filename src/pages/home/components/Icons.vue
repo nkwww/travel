@@ -6,6 +6,48 @@
       </div>
       <p class="icon-desc">热门景点</p>
     </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
+    <div class="icon">
+      <div class="icon-img">
+        <img class="icon-img-content" src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png" />
+      </div>
+      <p class="icon-desc">热门景点</p>
+    </div>
   </div>
 </template>
 
