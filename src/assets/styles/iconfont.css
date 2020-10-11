@@ -1,0 +1,31 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1602392562745'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1602392562745#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  /* data这块不需要添加目录 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANYAAsAAAAAB2AAAAMJAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCIIIKATYCJAMQCwoABCAFhG0HQxt3BhEVlLdkPxKyM5m7gWg/7VVDEY0zwVPJ1b+e7t2bgxExOn86I5VKIVy5EQL+xu627CeGZRwxjWfZ2P9puz0AHYXskmdZ/qbuSNqdvvx8hvAoCVIiJBeH45YlMN9qu4w1aYxtURdgvDWwsSZlCRZI7imo10ysBujiYQgQRhYVSOu2nXvjMegoAWTsqBGD8BUnhhkRjxDsWGjIRgJ4t8pdBjYk35fXVIoHR0ChR3Uf3mYoTc8KnnXUhf8X0leXsHA7C2AsAwUqAAMZ2WkbjGbBCpQwr7tRC3g8DrZqq3zW8f9/xQAX5jI7uMV/ngSh6REAVCOk8KxAkOHgWaWULnlHCG7gIAPAA0GgEzAJis2A3iFovMRHbDYges351J0lQw9+2fak4Yer/EChzKncxKXDttmeRUnDt0vyiB2xf8jdu9d792537lxu3045LhviM94Rbs8D+xL7bPO9+5O2n7yWPTMyIm7wg+IZi7TdiKd+xuSG7lAxZMbZG9k08/zMSPqQOCOePPLcHqZnPAg/qs+f94/pUU3yA07BARuxv7hRL13qS/EGnQOuyoZ4I4q/YXd5t0uzmrrGdiZCu+pxdxr+L3Q/dEkSvqjTtOlH/IbcB8N+D4iu++rDDYBHB/sTHP8XGtP5b5Pv8V87f2KZ+UKqN3NFghekGgUo3IuGMGaElx2FOJ5uoUq8o7DgSSzAEUImKJ4ChGEqIEA41RDE0whhlNNueTjxTEYRCwXKWEZAiOEEOKK4CEoMVxCGEf3BkAf+YcRGFGZcZb/hnEcZNXsSDBUTiL4gj7khbtRZmnnE1FahlIUJ7opicg/4jlePvGGDssUU854GqgQkXMMrOQ6riqEVLjBWJ1NtD65LXS9yYq47M54QkBAFSQAivgByYpgGiqors8bnjyAplooQGSjpsV5BBEPeOeDj4E1AvMmaSSWv8ozhnZQARSEAQmBqgFdiQSoWZIC2u18BEqM4ZAv8LQdcpRJNlTnHK+onXAOEQTcycaJiEmA8Og8bZTuiuGdm85Fhayx3OgAAAA==') format('woff2'),
+  url('./iconfont/iconfont.woff?t=1602392562745') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1602392562745') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1602392562745#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 不需要这部分 */
+/* .iconjiantou:before {
+  content: "\e64a";
+}
+
+.iconfanhui:before {
+  content: "\e624";
+}
+
+.iconsousuo:before {
+  content: "\e632";
+} */
+
