@@ -99,9 +99,11 @@ export default {
       left: 0
       right: 0
       bottom: .44rem
+      // border-box和padding连用，可以在确定的height[这里是隐式利用top和bottom拉伸得到的height]内控制图片高度
       box-sizing: border-box
       padding: .1rem
       .icon-img-content
+      // 只设置了height,图片宽高比将自适应
         height: 100%
         display: block
         margin: 0 auto
