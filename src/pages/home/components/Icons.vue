@@ -58,7 +58,10 @@ export default {
         id: '0010',
         imgUrl: 'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/3ee972807d075f1b356ab43a08e5ccb1.png',
         desc: '玛雅乐园'
-      }]
+      }],
+      swiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {

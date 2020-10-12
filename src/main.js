@@ -18,5 +18,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  // 将实例中template属性值进行编译，并将编译后的dom替换掉vue实例绑定的元素，如果该vue实例绑定的元素中存在内容，这些内容会直接被覆盖。
   template: '<App/>'
 })
