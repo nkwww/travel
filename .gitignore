@@ -4,6 +4,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# 该文件夹下的内容不会被提交到线上仓库和本地仓库
+static/mock
 
 # Editor directories and files
 .idea

@@ -17,26 +17,29 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1809/94/94765697f2e7377ca3.img.jpg_200x200_5626fcf4.jpg',
-        title: '遨天一号”太空科技体验馆',
-        desc: '综合性太空科技体验馆'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1508/2e/d9363ce50a88c8c5ff5a138c67687cd4.water.jpg_200x200_1c15c8f5.jpg',
-        title: '东部华侨城',
-        desc: '唯美、动感的生态主题乐园'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/201307/24/bba9e719d5ce1620c8d65eac.jpg_200x200_76792dbf.jpg',
-        title: '大鹏古城',
-        desc: '建筑规模宏伟，保存完好'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
+  // data () {
+  //   return {
+  //     recommendList: [{
+  //       id: '0001',
+  //       imgUrl: 'https://imgs.qunarzz.com/sight/p0/1809/94/94765697f2e7377ca3.img.jpg_200x200_5626fcf4.jpg',
+  //       title: '遨天一号”太空科技体验馆',
+  //       desc: '综合性太空科技体验馆'
+  //     }, {
+  //       id: '0002',
+  //       imgUrl: 'https://imgs.qunarzz.com/sight/p0/1508/2e/d9363ce50a88c8c5ff5a138c67687cd4.water.jpg_200x200_1c15c8f5.jpg',
+  //       title: '东部华侨城',
+  //       desc: '唯美、动感的生态主题乐园'
+  //     }, {
+  //       id: '0003',
+  //       imgUrl: 'https://imgs.qunarzz.com/sight/p0/201307/24/bba9e719d5ce1620c8d65eac.jpg_200x200_76792dbf.jpg',
+  //       title: '大鹏古城',
+  //       desc: '建筑规模宏伟，保存完好'
+  //     }]
+  //   }
+  // }
 }
 </script>
 
