@@ -2,8 +2,8 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-    <city-list></city-list>
-    <city-alphabet></city-alphabet>
+    <city-list :hotCities="hotCities" :cities="cities"></city-list>
+    <city-alphabet :cities="cities"></city-alphabet>
   </div>
 </template>
 
@@ -12,6 +12,7 @@ import CityHeader from './components/Header'
 import CitySearch from './components/Search'
 import CityList from './components/List'
 import CityAlphabet from './components/Alphabet'
+import axios from 'axios'
 
 export default {
   name: 'City',
@@ -20,6 +21,34 @@ export default {
     CitySearch,
     CityList,
     CityAlphabet
+  },
+  data () {
+    return {
+      hotCities: [],
+      cities: {}
+    }
+  },
+  methods: {
+    getCityInfo () {
+      // 本地模拟接口地址
+      axios.get('/api/city.json')
+        .then(this.getCityInfoSucc)
+    },
+    getCityInfoSucc (res) {
+      // 只需要data数据
+      res = res.data
+      console.log(res)
+      // 如果后端正确返回了数据，并且res中的data对象中有data数据
+      if (res.ret && res.data) {
+        const data = res.data
+        this.hotCities = data.hotCities
+        this.cities = data.cities
+      }
+    }
+  },
+  // 借助生命周期函数发送Ajax请求
+  mounted () {
+    this.getCityInfo()
   }
 }
 </script>
