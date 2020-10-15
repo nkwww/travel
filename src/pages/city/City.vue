@@ -37,7 +37,6 @@ export default {
     getCityInfoSucc (res) {
       // 只需要data数据
       res = res.data
-      console.log(res)
       // 如果后端正确返回了数据，并且res中的data对象中有data数据
       if (res.ret && res.data) {
         const data = res.data
