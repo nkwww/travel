@@ -5,7 +5,7 @@
   </div>
   <div class="search-content" v-show="keyword" ref="searchResult">
     <ul>
-      <li class="search-item border-bottom" v-for="item in queryList" :key="item.id">{{ item.name }}</li>
+      <li class="search-item border-bottom" v-for="item in queryList" :key="item.id" @click="handleCityClick(item.name)">{{ item.name }}</li>
       <li v-show="showQuery" class="search-item border-bottom">未找到查询结果</li>
     </ul>
   </div>
@@ -21,6 +21,13 @@ export default {
       keyword: '',
       queryList: [],
       timer: null
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      // 直接调用mutations
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
     }
   },
   props: {
