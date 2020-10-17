@@ -15,6 +15,7 @@ import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
+import { mapState } from 'Vuex'
 
 export default {
   // 组件名字
@@ -28,16 +29,21 @@ export default {
   },
   data () {
     return {
+      lastCity: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
       weekendList: []
     }
   },
+  // 用computed属性保存state中的city
+  computed: {
+    ...mapState({city: 'city'})
+  },
   methods: {
     getHomeInfo () {
       // 本地模拟接口地址
-      axios.get('/api/index.json')
+      axios.get('/api/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
@@ -54,8 +60,17 @@ export default {
     }
   },
   // 借助生命周期函数发送Ajax请求
+  // 每次路由切换的时候，页面都会被重新渲染，然后执行mouted钩子，然后ajax数据就会被重新获取
   mounted () {
+    this.lastCity = this.city
     this.getHomeInfo()
+  },
+  // 页面重新被显示的时候,keepAlive新增的生命周期钩子函数
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>
