@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // 引用单文件组件
 import Home from '@/pages/home/Home.vue'
 import City from '@/pages/city/City.vue'
+import Detail from '@/pages/detail/Detail.vue'
 
 Vue.use(Router)
 
@@ -17,9 +18,13 @@ export default new Router({
     },
     {
       path: '/city',
-      // 路由名字
       name: 'City',
       component: City
+    },
+    {
+      path: '/detail:id',
+      name: 'Detail',
+      component: Detail
     }
   ]
 })
