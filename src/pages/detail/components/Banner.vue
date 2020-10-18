@@ -36,6 +36,10 @@ export default {
     handleGallaryClose () {
       this.showGallary = false
     }
+  },
+  // 解决因点击返回按钮而导致触发点击事件，导致showGallary的值变为ture，引发下次点击时直接显示Gallary组件
+  activated () {
+    this.showGallary = false
   }
 }
 </script>
