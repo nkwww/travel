@@ -5,8 +5,6 @@
       <router-link to="/" tag="div" class="header-fixed-back iconfont">&#xe624;</router-link>
       景点详情
     </div>
-    <div class="content">
-    </div>
   </div>
 </template>
 
@@ -34,20 +32,20 @@ export default {
     }
   },
   activated () {
+    document.documentElement.scrollTop = 0
     // 对window全局对象进行了绑定
     window.addEventListener('scroll', this.handleScroll)
   },
   // 页面即将被替换时，解绑事件
   deactivated () {
     window.removeEventListener('scroll', this.handleScroll)
+    document.documentElement.scrollTop = 0
   }
 }
 </script>
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
-  .content
-    height: 50rem
   .header-abs
     position: absolute
     left: .2rem
@@ -70,6 +68,7 @@ export default {
     color: #fff
     background: $bgColor
     font-size: .32rem
+    z-index: 2
     .header-fixed-back
       position: absolute
       top: 0
