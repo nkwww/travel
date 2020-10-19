@@ -34,7 +34,12 @@ export default {
     }
   },
   activated () {
+    // 对window全局对象进行了绑定
     window.addEventListener('scroll', this.handleScroll)
+  },
+  // 页面即将被替换时，解绑事件
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
