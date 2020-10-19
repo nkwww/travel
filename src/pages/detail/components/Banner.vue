@@ -6,9 +6,6 @@
         <div class="banner-title">“遨天一号”太空科技体验馆</div>
         <div class="banner-number"><span class="iconfont banner-icon">&#xe64b; 27</span></div>
       </div>
-      <router-link to="/">
-        <div class="iconfont header-back">&#xe624;</div>
-      </router-link>
     </div>
     <common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
   </div>
@@ -36,10 +33,6 @@ export default {
     handleGallaryClose () {
       this.showGallary = false
     }
-  },
-  // 解决因点击返回按钮而导致触发点击事件，导致showGallary的值变为ture，引发下次点击时直接显示Gallary组件
-  activated () {
-    this.showGallary = false
   }
 }
 </script>
@@ -74,15 +67,4 @@ export default {
         background: rgba(0, 0, 0, .8)
       .banner-icon
         font-size: .24rem
-    .header-back
-      position: absolute
-      top: 0
-      left: 0
-      height: .86rem
-      line-height: .72rem
-      color: #fff
-      width: .64em
-      font-size: .4rem
-      margin-left: .3rem
-      margin-top: .1rem
 </style>
