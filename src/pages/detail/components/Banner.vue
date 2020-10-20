@@ -1,13 +1,16 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1809/e2/e2e7b7aa3a6db5bea3.img.jpg_600x330_98fa184d.jpg" />
+      <img class="banner-img" :src="bannerImg" />
       <div class="banner-info">
-        <div class="banner-title">“遨天一号”太空科技体验馆</div>
-        <div class="banner-number"><span class="iconfont banner-icon">&#xe64b; 27</span></div>
+        <div class="banner-title">{{ sightName }}</div>
+        <div class="banner-number">
+          <span class="iconfont banner-icon">&#xe64b;</span>
+          {{gallaryImgs.length}}
+        </div>
       </div>
     </div>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
+    <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallaryClose"></common-gallary>
   </div>
 </template>
 
@@ -18,11 +21,13 @@ export default {
   components: {
     CommonGallary
   },
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   data () {
     return {
-      imgs: ['http://img1.qunarzz.com/sight/p0/1809/e2/e2e7b7aa3a6db5bea3.img.jpg_r_800x800_ec36f992.jpg',
-        'http://img1.qunarzz.com/sight/p0/1809/9c/9cba899d5df8910aa3.img.jpg_r_800x800_8890796d.jpg',
-        'http://img1.qunarzz.com/sight/p0/1809/de/def6c6384bd21e5ba3.img.jpg_r_800x800_3020f29f.jpg'],
       showGallary: false
     }
   },
